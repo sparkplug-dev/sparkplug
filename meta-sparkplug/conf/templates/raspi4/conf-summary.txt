@@ -1,0 +1,1 @@
+The default SparkPlug configuration for Raspberry Pi 4 has been loaded. 

@@ -1,0 +1,10 @@
+# short-description: Create an EFI disk image
+# long-description: Creates a partitioned EFI disk image that the user
+# can directly dd to boot media.
+
+part /boot --source bootimg-efi --sourceparams="loader=${EFI_PROVIDER},initrd=${INITRAMFS_IMAGE}-${MACHINE}.${INITRAMFS_FSTYPES}" --label boot --active --align 1024 --use-uuid
+part swap --size 44 --label swap --fstype=swap --use-uuid
+part / --source rootfs --exclude-path=/home --fstype=ext4 --label root --align 1024 --use-uuid
+part /home --source rootfs --rootfs-dir=${IMAGE_ROOTFS}/home --fstype=ext4 --label root --align 1024 --use-uuid --size 100
+
+bootloader --ptable gpt --timeout=5 --append="rootwait rootfstype=ext4"

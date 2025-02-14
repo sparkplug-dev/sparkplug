@@ -1,0 +1,4 @@
+
+### Shell environment set up for builds. ###
+
+You can build SparkPlug with 'bitbake sparkplug-image'

@@ -1,0 +1,5 @@
+build/
+vm/
+
+scripts/runQemu.sh
+scripts/extractQemuEnv.sh

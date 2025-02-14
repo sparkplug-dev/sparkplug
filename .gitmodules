@@ -1,0 +1,10 @@
+[submodule "poky"]
+	path = poky
+	url = git://git.yoctoproject.org/poky
+	branch = dunfell
+[submodule "meta-raspberrypi"]
+	path = meta-raspberrypi
+	url = git://git.yoctoproject.org/meta-raspberrypi
+[submodule "poky-container"]
+	path = container
+	url = https://github.com/crops/poky-container.git
