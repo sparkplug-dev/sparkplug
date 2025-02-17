@@ -3,7 +3,7 @@ LICENSE = "GPL-3.0-only"
 
 IMAGE_FEATURES += "read-only-rootfs splash weston"
 
-IMAGE_INSTALL:append = "psplash util-linux"
+IMAGE_INSTALL:append = "psplash util-linux htop"
 
 IMAGE_OVERHEAD_FACTOR ?= "1.2"
 IMAGE_ROOTFS_SIZE ?= "512000"

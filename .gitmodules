@@ -8,3 +8,6 @@
 [submodule "poky-container"]
 	path = container
 	url = https://github.com/crops/poky-container.git
+[submodule "meta-openembedded"]
+	path = meta-openembedded
+	url = git://git.openembedded.org/meta-openembedded
