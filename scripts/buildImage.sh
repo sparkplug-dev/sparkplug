@@ -35,7 +35,7 @@ if [ -d "${BUILD_DIR}/tmp/deploy/images" ]; then
         mkdir ${BUILD_DIR}/out-images
     fi
 
-    cp $1-*rootfs.wic.bz2 ${BUILD_DIR}/out-images/root.img.bz2
+    cp -L $1-*.rootfs.wic.bz2 ${BUILD_DIR}/out-images/root.img.bz2
     cd ${BUILD_DIR}/out-images
 
     bzip2 -fd root.img.bz2 
